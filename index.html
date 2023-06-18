@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Ice cream</h1>
+    <p id="description">Let us know what your ice cream preferences are!</p>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name" id="name-label"
+          >Enter your name:
+          <input placeholder="Your Name" id="name" type="text" required
+        /></label>
+        <label for="email" id="email-label"
+          >Enter your e-mail:
+          <input placeholder="Your E-mail" id="email" type="email" required
+        /></label>
+        <label for="number" id="number-label"
+          >Enter your age:
+          <input
+            placeholder="Your Agee"
+            id="number"
+            type="number"
+            required
+            min="5"
+            max="120"
+        /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Survey</legend>
+        <label for="dropdown">
+          What Season do you eat the most ice cream in?
+          <select id="dropdown">
+            <option>select one</option>
+            <option>Winter</option>
+            <option>Spring</option>
+            <option>Summer</option>
+            <option>Fall</option>
+          </select>
+        </label>
+        <label>
+          <input type="radio" value="like" name="like" /> I like ice cream
+        </label>
+        <label
+          ><input type="radio" value="dislike" name="like" /> I do not like ice
+          cream
+        </label>
+        <label><input type="checkbox" value="vanilla" />Vanilla</label>
+        <label><input type="checkbox" value="strawberry" />Strawberry</label>
+        <label><input type="checkbox" value="chocholate" />Chocolate</label>
+        <label><input type="checkbox" value="lemon" />Lemon</label>
+        <label><input type="checkbox" value="hazelnut" />Hazelnut</label>
+        <label><input type="checkbox" value="none" />None of the above</label>
+      </fieldset>
+      <fieldset>
+        <legend>Submit</legend>
+        <textarea
+          row="3"
+          cols="30"
+          placeholder="Your favourite Ice Cream story"
+        ></textarea>
+        <input type="submit" id="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>

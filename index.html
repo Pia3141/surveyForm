@@ -4,25 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1 id="title">Ice cream</h1>
     <p id="description">Let us know what your ice cream preferences are!</p>
-    <form id="survey-form">
+    <form
+      action="https://register-demo.freecodecamp.org"
+      method="post"
+      id="survey-form"
+    >
       <fieldset>
         <legend>Personal Information</legend>
         <label for="name" id="name-label"
           >Enter your name:
-          <input placeholder="Your Name" id="name" type="text" required
+          <input placeholder="Name" id="name" type="text" required
         /></label>
         <label for="email" id="email-label"
           >Enter your e-mail:
-          <input placeholder="Your E-mail" id="email" type="email" required
+          <input placeholder="E-mail" id="email" type="email" required
         /></label>
         <label for="number" id="number-label"
           >Enter your age:
           <input
-            placeholder="Your Agee"
+            placeholder="Age"
             id="number"
             type="number"
             required
@@ -42,6 +47,7 @@
             <option>Fall</option>
           </select>
         </label>
+        <legend>Do you even like ice cream?</legend>
         <label>
           <input type="radio" value="like" name="like" /> I like ice cream
         </label>
@@ -49,6 +55,7 @@
           ><input type="radio" value="dislike" name="like" /> I do not like ice
           cream
         </label>
+        <legend>What kind of ice cream do you eat?</legend>
         <label><input type="checkbox" value="vanilla" />Vanilla</label>
         <label><input type="checkbox" value="strawberry" />Strawberry</label>
         <label><input type="checkbox" value="chocholate" />Chocolate</label>
